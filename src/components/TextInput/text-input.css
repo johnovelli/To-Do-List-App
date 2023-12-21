@@ -1,0 +1,26 @@
+.text-input {
+  align-items: center;
+  border: solid 2px white;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 420px;
+}
+
+.text-input input {
+  background-color: #131521;
+  border-color: transparent;
+  border-image: linear-gradient(to right, #5A0CFF, #8B00F9);
+  border-image-slice: 1;
+  border-image-width: 3px;
+  border-image-outset: 0;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  padding: 5px;
+  width: 300px;
+}
+
+.text-input input:focus {
+  outline: none; 
+}

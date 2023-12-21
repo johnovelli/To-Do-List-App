@@ -1,8 +1,14 @@
+import TextInput from '../../components/TextInput';
 import './main.css'
 
 function Main() {
   return (
-    <h2>Main</h2>
+    <div className='main'>
+      <div className='to-do-list'>
+        <h2>Quais os planos para hoje ?</h2>
+        <TextInput />
+      </div>
+    </div>
   );
 }
 
