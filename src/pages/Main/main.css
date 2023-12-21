@@ -19,11 +19,27 @@
 color: white;
 font-size: 28px;
 margin-top: 30px;
+padding: 0;
 }
 
-@media screen and (max-width: 1366px) {
+.language {
+  margin-top: 10px;
+  width: 420px
+}
+
+.language button{
+margin-right: 5px;
+}
+
+@media screen and (max-width: 1566px) {
   .to-do-list {
-    height: 90vh;
-    width: 30vw;
+    height: auto;
+    min-height: 600px;
+    width: 400px;
   }
+  .language {
+    margin-top: 10px;
+    width: 380px
+  }
+  
 }
