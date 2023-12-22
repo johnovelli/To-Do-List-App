@@ -37,3 +37,4 @@ function TextInput({ language, todoList, setTodoList }: TextInputType) {
 }
 
 export default TextInput;
+
