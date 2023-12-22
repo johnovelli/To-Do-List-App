@@ -29,7 +29,8 @@ function Main() {
           'What are the plans for today?'
         )}</h2>
         <TextInput
-        language={language} 
+        language={language}
+        todoList={todoList}
         setTodoList={setTodoList}
         />
         <TodoList 

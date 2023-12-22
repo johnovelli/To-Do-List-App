@@ -34,10 +34,6 @@ margin-right: 5px;
 }
 
 @media only screen and (max-width: 600px) {
-  .to-do-list {
-    margin-top: 10px;
-    width: 360px;
-  }
 
   .language {
     width: 315px

@@ -3,16 +3,21 @@ import './text-input.css'
 
 type TextInputType = {
   language: "Pt_br" | "Eng_us",
-  setTodoList: React.Dispatch<React.SetStateAction<string[]>>;
+  todoList: string[],
+  setTodoList: React.Dispatch<React.SetStateAction<string[]>>,
 }
 
-function TextInput({ language, setTodoList }: TextInputType) {
+function TextInput({ language, todoList, setTodoList }: TextInputType) {
   const [inputText, setInputText] = useState<string>("");
   
   function handleAdd() {
+    if(todoList.includes(inputText)){
+      window.alert("Digite outra tarefa");
+      return;
+    } 
     if (inputText === "") {
       window.alert("Digite uma tarefa");
-      return null;
+      return;
     }
     setTodoList((prev) => [...prev, inputText]);
     setInputText("");
