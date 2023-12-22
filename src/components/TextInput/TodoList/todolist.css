@@ -1,0 +1,46 @@
+.task {
+  align-items: center;
+  background: linear-gradient(to right, #5A0CFF, #8B00F9);
+  border-radius: 18px;
+  box-shadow: 2px 3px 10px #02686b;
+  color: white;
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  margin-top: 16px;
+  width: 415px;
+}
+
+.task:hover {
+  background: linear-gradient(to right, #5A0CFF, #02686b);
+  box-shadow: 2px 3px 8px #8B00F9;
+}
+
+.task input{
+ transform: scale(2);
+ margin-left: 20px;
+ margin-top: 5px;
+}
+
+.task strong {
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+.task button {
+  background-color: transparent;
+  border: none;
+  margin-right: 15px;
+  padding: 0;
+}
+
+.task img {
+  height: 30px;
+  margin-top: 4px;
+  transition: height 0.3s;
+}
+
+.task img:hover {
+  height: 31px;
+  margin-top: 4px;
+}

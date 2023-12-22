@@ -3,7 +3,6 @@ import './text-input.css'
 
 type TextInputType = {
   language: "Pt_br" | "Eng_us",
-  checkedList: string[];
   setTodoList: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
@@ -13,7 +12,7 @@ function TextInput({ language, setTodoList }: TextInputType) {
   function handleAdd() {
     if (inputText === "") {
       window.alert("Digite uma tarefa");
-      return false;
+      return null;
     }
     setTodoList((prev) => [...prev, inputText]);
     setInputText("");

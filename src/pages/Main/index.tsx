@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import TextInput from '../../components/TextInput';
+import TodoList from '../../components/TextInput/TodoList';
 import './main.css'
 
 function Main() {
@@ -15,10 +16,6 @@ function Main() {
     setLanguage('Eng_us')
   }
 
-  useEffect(() => {
-    console.log(todoList);
-  }, [todoList])
-
   return (
     <div className='main'>
       <div className='to-do-list'>
@@ -33,8 +30,13 @@ function Main() {
         )}</h2>
         <TextInput
         language={language} 
+        setTodoList={setTodoList}
+        />
+        <TodoList 
+        todoList={todoList}
         checkedList={checkedList}
         setTodoList={setTodoList}
+        setCheckedList={setCheckedList}
         />
       </div>
     </div>

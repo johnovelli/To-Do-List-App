@@ -3,6 +3,7 @@
   display: flex;
   height: 100vh;
   justify-content: center;
+  min-height: 768px;
 }
 
 .to-do-list {
@@ -11,7 +12,8 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  height: 768px;
+  min-height: 768px;
+  overflow-y: auto; /* Adicione essa linha */
   width: 480px;
 }
 
@@ -29,17 +31,4 @@ padding: 0;
 
 .language button{
 margin-right: 5px;
-}
-
-@media screen and (max-width: 1566px) {
-  .to-do-list {
-    height: auto;
-    min-height: 600px;
-    width: 400px;
-  }
-  .language {
-    margin-top: 10px;
-    width: 380px
-  }
-  
 }
