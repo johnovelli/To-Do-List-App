@@ -35,13 +35,12 @@ margin-right: 5px;
 
 @media only screen and (max-width: 600px) {
   .to-do-list {
-    margin-bottom: 10px;
     margin-top: 10px;
     width: 360px;
   }
 
   .language {
-    width: 330px
+    width: 315px
   }
 
   .to-do-list h2 {

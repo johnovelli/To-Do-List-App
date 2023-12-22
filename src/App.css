@@ -1,3 +1,9 @@
 body {
   background: linear-gradient(90deg, #321aff, #8b7cfc);
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #131521;
+  }
+}
